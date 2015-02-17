@@ -1,0 +1,64 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sfs_stock_customisation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20130819-231103\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-20 05:08+0000\n"
+"PO-Revision-Date: 2014-05-20 05:08+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sfs_stock_customisation
+#: view:stock.move:0
+#: field:stock.move,product_categ_id:0
+msgid "Product Category"
+msgstr "Product Category"
+
+#. module: sfs_stock_customisation
+#: sql_constraint:stock.production.lot:0
+msgid "The Serial Number must be unique !"
+msgstr "El número de serie debe ser único!"
+
+#. module: sfs_stock_customisation
+#: model:ir.model,name:sfs_stock_customisation.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de stock"
+
+#. module: sfs_stock_customisation
+#: model:ir.model,name:sfs_stock_customisation.model_stock_production_lot
+msgid "Serial Number"
+msgstr "Nº de serie"
+
+#. module: sfs_stock_customisation
+#: model:ir.model,name:sfs_stock_customisation.model_stock_location
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: sfs_stock_customisation
+#: model:ir.model,name:sfs_stock_customisation.model_stock_picking
+msgid "Picking List"
+msgstr "Albarán"
+
+#. module: sfs_stock_customisation
+#: model:ir.model,name:sfs_stock_customisation.model_stock_warehouse
+msgid "Warehouse"
+msgstr "Almacén"
+
+#. module: sfs_stock_customisation
+#: constraint:stock.move:0
+msgid "You cannot assign same serial number for more than one move."
+msgstr "No se puede asignar el mismo numero de serie a diferentes lineas."
+
+#. module: sfs_stock_customisation
+#: view:stock.warehouse:0
+#: field:stock.warehouse,user_ids:0
+msgid "Allowed Users"
+msgstr "Allowed Users"
+

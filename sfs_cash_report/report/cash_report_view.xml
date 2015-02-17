@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+      <report auto="True"
+          id="report_cash_report"
+          model="account.voucher"
+          name="cash_report"
+          rml="sfs_cash_report/report/cash_report.rml"
+          string="Cash Report"
+          menu="False"
+      />
+    	
+    	
+    </data>
+</openerp>

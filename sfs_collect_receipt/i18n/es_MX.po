@@ -1,0 +1,117 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sfs_collect_receipt
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20130819-231103\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-22 14:42+0000\n"
+"PO-Revision-Date: 2014-05-22 14:42+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Transaction Type"
+msgstr "Tipo de transacción"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Debits"
+msgstr "Débitos"
+
+#. module: sfs_collect_receipt
+#: model:ir.actions.report.xml,name:sfs_collect_receipt.report_collect_receipt
+msgid "Collect Receipt"
+msgstr "Collect Receipt"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Due Date"
+msgstr "Fecha vencimiento"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Open Balance"
+msgstr "Abrir balance"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Allocation"
+msgstr "Asignación"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Credits"
+msgstr "Haber"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Payment Ref"
+msgstr "Ref. pago"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Difference Amount"
+msgstr "Importe de la diferencia"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Payment Information"
+msgstr "Información de pago"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Paid Amount"
+msgstr "Importe pagado"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Memo"
+msgstr "Memoria"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Orginal Amount"
+msgstr "Importe original"
+
+#. module: sfs_collect_receipt
+#: report:collect.receipt:0
+msgid "Full Reconcile"
+msgstr "Conciliación completa"
+

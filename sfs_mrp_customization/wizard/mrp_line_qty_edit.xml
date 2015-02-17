@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="mrp_line_qty_edit_view" model="ir.ui.view">
+    		<field name="name">mrp.line.qty.edit.form</field>
+            <field name="model">mrp.line.qty.edit</field>
+            <field name="arch" type="xml">
+            	 <form string="Enter New Quantity" version="7.0">
+            	 	<group>
+            	 		<field name="qty"/>
+ 					</group>
+            	 	<footer>
+            	 		<button name="update_line_qty" string="Update" class="oe_highlight" type="object"/>
+            	 		<button string="Cancel" class="oe_link" special="cancel"/>
+            	 	</footer>
+            	 </form>
+            </field>
+    	</record>
+    	
+    	<record id="mrp_line_qty_edit_action" model="ir.actions.act_window">
+            <field name="name">Enter New Quantity</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mrp.line.qty.edit</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</openerp>

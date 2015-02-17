@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report auto="False" id="report_collect_receipt" model="account.voucher" name="collect.receipt"
+                rml="sfs_collect_receipt/report/collect_receipt.rml" string="Collect Receipt"
+                usage="default"/>
+    </data>
+</openerp>

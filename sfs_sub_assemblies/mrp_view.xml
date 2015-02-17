@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="sfs_view_mrp_bom_form_inherit" model="ir.ui.view">
+            <field name="name">sfs.view.mrp.bom.form.inherit</field>
+            <field name="model">mrp.bom</field>
+            <field name="inherit_id" ref="mrp.mrp_bom_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/group/group/div" position="after">
+                    <label for="is_sub_assemblies" class="oe_inline" groups="sfs_sub_assemblies.group_subassembly_user"/>
+                    <div groups="sfs_sub_assemblies.group_subassembly_user">
+                        <field name="is_sub_assemblies" class="oe_inline"/>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="attrs">{'required': [('is_sub_assemblies', '=', True)]}</attribute>
+                </xpath>
+            </field>
+        </record>
+        
+        <record id="sfs_mrp_bom_tree" model="ir.ui.view">
+            <field name="name">sfs.mrp.bom.tree</field>
+            <field name="model">mrp.bom</field>
+            <field name="arch" type="xml">
+                <tree string="Bill of materials">
+                    <field name="name"/>
+                    <field name="product_code"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="sfs_view_mrp_production_form_inherit" model="ir.ui.view">
+            <field name="name">sfs.view.mrp.production.form.inherit</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='move_lines']/tree/field[@name='product_id']" position="after">
+                    <field name="source_bom_id"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

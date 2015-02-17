@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="sfs_view_product_form_inherit" model="ir.ui.view">
+            <field name="name">sfs.view.product.form.inherit</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='options']" position="after">
+                    <div name="sub_assemblies" groups="sfs_sub_assemblies.group_subassembly_user">
+                        <field name="contain_sub_assemblies"/>
+                        <label for="contain_sub_assemblies"/>
+                    </div>
+                </xpath>
+                <xpath expr="//page[@string='Information']" position="after">
+                    <page string='Sub Assemblies' attrs="{'invisible': [('contain_sub_assemblies', '=', False)]}" groups="sfs_sub_assemblies.group_subassembly_user">
+                        <field name="sub_assembly_bom_ids" nolabel="1" colspan="4"
+                                    context="{'tree_view_ref': 'sfs_sub_assemblies.sfs_mrp_bom_tree'}"
+                                    attrs="{'readonly': [('supply_method', '!=', 'produce')]}"
+                                    domain="[('is_sub_assemblies', '=', True)]"/>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

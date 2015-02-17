@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+      <report auto="True"
+          id="report_collect_report"
+          model="account.invoice"
+          name="collect_report"
+          rml="sfs_collect_report/report/collect_report.rml"
+          string="Cash Report"
+          menu="False"
+      />
+    	
+    	
+    </data>
+</openerp>

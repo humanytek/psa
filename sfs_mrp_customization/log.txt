@@ -1,0 +1,4 @@
+V1.0 By Subhin P.V
+On 20th January 2014
+	*Created module mrp_customisation. Which allows editing quantities of Products to Consume
+	and products to produce after confirmation

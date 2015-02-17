@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="sfs_invoice_glp_change_inherit" model="ir.ui.view">
+            <field name="name">account.journal.form.view.inherit</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form" />
+            <field name="arch" type="xml">
+          		<xpath expr="//notebook/page[@string='Cash Registers']" position="after">
+					<page string="Users Security">	
+						<group colspan="4" col="1">
+							<field name="user_list" nolabel="1"/>
+						</group>
+					</page>
+				</xpath>
+            </field>
+      	</record>
+     </data>
+</openerp>

@@ -1,0 +1,77 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sfs_serial_invoiced
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20130819-231103\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-10 07:54+0000\n"
+"PO-Revision-Date: 2014-06-10 07:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sfs_serial_invoiced
+#: view:stock.move.split:0
+msgid "{'invisible':['|', ('use_exist','=',True), ('user_invoice_serial', '=',True)]}"
+msgstr "{'invisible':['|', ('use_exist','=',True), ('user_invoice_serial', '=',True)]}"
+
+#. module: sfs_serial_invoiced
+#: model:ir.model,name:sfs_serial_invoiced.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: sfs_serial_invoiced
+#: model:ir.model,name:sfs_serial_invoiced.model_stock_move_split_lines
+msgid "Stock move Split lines"
+msgstr "Dividir líneas de movimientos de inventario"
+
+#. module: sfs_serial_invoiced
+#: model:ir.model,name:sfs_serial_invoiced.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de stock"
+
+#. module: sfs_serial_invoiced
+#: model:ir.model,name:sfs_serial_invoiced.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Línea de factura"
+
+#. module: sfs_serial_invoiced
+#: view:stock.move.split:0
+msgid "{'invisible':[('use_exist','!=',True), ('user_invoice_serial', '!=',True)]}"
+msgstr "{'invisible':[('use_exist','!=',True), ('user_invoice_serial', '!=',True)]}"
+
+#. module: sfs_serial_invoiced
+#: field:account.invoice.line,production_lot_id:0
+msgid "Serial Number"
+msgstr "Serial Number"
+
+#. module: sfs_serial_invoiced
+#: view:stock.move.split:0
+msgid "{'user_invoice_serial': user_invoice_serial, 'move_id': related_move_id}"
+msgstr "{'user_invoice_serial': user_invoice_serial, 'move_id': related_move_id}"
+
+#. module: sfs_serial_invoiced
+#: view:stock.move:0
+msgid "Split"
+msgstr "Dividir"
+
+#. module: sfs_serial_invoiced
+#: model:ir.model,name:sfs_serial_invoiced.model_stock_move_split
+msgid "Split in Serial Numbers"
+msgstr "Separar en números de serie"
+
+#. module: sfs_serial_invoiced
+#: field:stock.move.split,related_move_id:0
+msgid "Related Move"
+msgstr "Related Move"
+
+#. module: sfs_serial_invoiced
+#: field:stock.move.split,user_invoice_serial:0
+msgid "Use invoiced serial numbers"
+msgstr "Usar numeros de serie facturados"
+

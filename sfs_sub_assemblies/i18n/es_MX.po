@@ -1,0 +1,192 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sfs_sub_assemblies
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20130819-231103\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-22 10:45+0000\n"
+"PO-Revision-Date: 2014-04-22 10:45+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sfs_sub_assemblies
+#: view:mrp.bom:0
+msgid "Bill of materials"
+msgstr "Lista de materiales"
+
+#. module: sfs_sub_assemblies
+#: field:sale.order.line,assembly_bom_ids:0
+msgid "Sub Assembly"
+msgstr "Sub Ensambles"
+
+#. module: sfs_sub_assemblies
+#: view:sale.order:0
+msgid "Add Sub Assemblies"
+msgstr "Añadir Sub Ensambles"
+
+#. module: sfs_sub_assemblies
+#: field:mrp.bom,product_code:0
+msgid "Product Code"
+msgstr "Código producto"
+
+#. module: sfs_sub_assemblies
+#: model:ir.model,name:sfs_sub_assemblies.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "Orden de fabricación"
+
+#. module: sfs_sub_assemblies
+#: view:sale.order:0
+msgid "{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom, 'assembly_bom_ids':assembly_bom_ids, 'assembly_line_ids':assembly_line_ids}"
+msgstr "{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom, 'assembly_bom_ids':assembly_bom_ids, 'assembly_line_ids':assembly_line_ids}"
+
+#. module: sfs_sub_assemblies
+#: field:sale.order.line,assembly_line_ids:0
+msgid "Sub Assembly Products"
+msgstr "Sub Ensambles Productos"
+
+#. module: sfs_sub_assemblies
+#: field:sale.assembly.line,bom_id:0
+msgid "BOM"
+msgstr "BOM"
+
+#. module: sfs_sub_assemblies
+#: model:ir.model,name:sfs_sub_assemblies.model_sale_assembly_line
+msgid "Model to hold assembly line in sale"
+msgstr "Model to hold assembly line in sale"
+
+#. module: sfs_sub_assemblies
+#: help:mrp.production,sale_line_id:0
+msgid "Indicate the Reference to sales order line."
+msgstr "Indicate the Reference to sales order line."
+
+#. module: sfs_sub_assemblies
+#: field:sale.assembly.line,product_uom_id:0
+msgid "Unit of Measure"
+msgstr "Unidad de Medida"
+
+#. module: sfs_sub_assemblies
+#: field:sale.order.line,assembly_amount_untaxed:0
+msgid "Untaxed Amount"
+msgstr "Base"
+
+#. module: sfs_sub_assemblies
+#: view:sale.order:0
+msgid "{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom, 'assembly_bom_ids':assembly_bom_ids, 'assembly_line_ids':assembly_line_ids, 'product_changed':True}"
+msgstr "{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom, 'assembly_bom_ids':assembly_bom_ids, 'assembly_line_ids':assembly_line_ids, 'product_changed':True}"
+
+#. module: sfs_sub_assemblies
+#: model:ir.model,name:sfs_sub_assemblies.model_product_product
+#: field:sale.assembly.line,product_id:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: sfs_sub_assemblies
+#: field:sale.assembly.line,description:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: sfs_sub_assemblies
+#: field:product.product,contain_sub_assemblies:0
+#: field:sale.order.line,contain_sub_assemblies:0
+msgid "Can contain Sub Assemblies"
+msgstr "Puede Contener Sub Ensambles"
+
+#. module: sfs_sub_assemblies
+#: view:sale.assembly.line:0
+msgid "Sales Assembly Line"
+msgstr "Sales Assembly Line"
+
+#. module: sfs_sub_assemblies
+#: field:sale.assembly.line,amount_total:0
+msgid "Subtotal"
+msgstr "Sub-Total"
+
+#. module: sfs_sub_assemblies
+#: view:product.product:0
+#: field:product.product,sub_assembly_bom_ids:0
+msgid "Sub Assemblies"
+msgstr "Sub Ensambles"
+
+#. module: sfs_sub_assemblies
+#: field:sale.assembly.line,tax_ids:0
+#: field:sale.order.line,assembly_amount_tax:0
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: sfs_sub_assemblies
+#: model:ir.model,name:sfs_sub_assemblies.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Lista de material"
+
+#. module: sfs_sub_assemblies
+#: field:mrp.bom,is_sub_assemblies:0
+msgid "Is Sub Assemblies?"
+msgstr "Es un Sub Ensamble?"
+
+#. module: sfs_sub_assemblies
+#: help:sale.order.line,assembly_amount_total:0
+msgid "The amount with tax."
+msgstr "The amount with tax."
+
+#. module: sfs_sub_assemblies
+#: help:sale.order.line,assembly_amount_tax:0
+msgid "Total tax."
+msgstr "Total tax."
+
+#. module: sfs_sub_assemblies
+#: field:sale.assembly.line,price_unit:0
+msgid "Price Unit"
+msgstr "Precio unitario"
+
+#. module: sfs_sub_assemblies
+#: field:mrp.production,sale_line_id:0
+#: field:sale.assembly.line,sale_line_id:0
+msgid "Sale order line"
+msgstr "Sale order line"
+
+#. module: sfs_sub_assemblies
+#: field:sale.assembly.line,product_uom_qty:0
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: sfs_sub_assemblies
+#: field:sale.order.line,assembly_amount_total:0
+msgid "Total"
+msgstr "Total"
+
+#. module: sfs_sub_assemblies
+#: model:ir.model,name:sfs_sub_assemblies.model_ir_actions_act_window
+msgid "ir.actions.act_window"
+msgstr "ir.acciones.acc_ventana"
+
+#. module: sfs_sub_assemblies
+#: view:sale.order:0
+msgid "(update)"
+msgstr "(actualizar)"
+
+#. module: sfs_sub_assemblies
+#: model:ir.model,name:sfs_sub_assemblies.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: sfs_sub_assemblies
+#: view:sale.order:0
+msgid "Order Line"
+msgstr "Línea del pedido"
+
+#. module: sfs_sub_assemblies
+#: model:ir.model,name:sfs_sub_assemblies.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de Orden de venta"
+
+#. module: sfs_sub_assemblies
+#: help:sale.order.line,assembly_amount_untaxed:0
+msgid "The amount without tax."
+msgstr "The amount without tax."
+

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="view_mrp_form_inherit_sfs" model="ir.ui.view">
+            <field name="name">mrp.form.inherit.sfs</field>
+            <field name="model">mrp.production</field>
+            <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field [@name='move_lines']" position="attributes">
+                    <attribute name="context">{'from_production': True}</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

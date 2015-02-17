@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mrp_created_qty_salesman,move mrp_created_qty_salesman,model_mrp_created_qty_edit,base.group_sale_salesman,1,1,1,0
+access_mrp_created_qty_user,move mrp_created_qty_user,model_mrp_created_qty_edit,mrp.group_mrp_user,1,1,1,0
+access_mrp_line_qty_edit_user,move_mrp_line_qty_edit_user,model_mrp_line_qty_edit,mrp.group_mrp_user,1,1,1,0
+access_mrp_line_qty_edit_salesman,move_mrp_line_qty_edit_salesman,model_mrp_line_qty_edit,base.group_sale_salesman,1,1,1,0
+access_mrp_created_qty_manager,move mrp_created_qty_manager,model_mrp_created_qty_edit,mrp.group_mrp_manager,1,1,1,1
+access_mrp_line_qty_edit_manager,move_mrp_line_qty_edit_manager,model_mrp_line_qty_edit,mrp.group_mrp_manager,1,1,1,1

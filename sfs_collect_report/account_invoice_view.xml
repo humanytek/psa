@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+    	<record id="sfs_account_invoice_form_inherit" model="ir.ui.view">
+            <field name="name">account.invoice.inherit</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@string='Other Info']//field[@name='date_due']" position="after">
+                    <field name="promise_payment_day" attrs="{'readonly':[('state','not in',('draft','open'))]}"/>
+                </xpath>
+                <xpath expr="//page[@string='Other Info']//field[@name='move_id']" position="after">
+                    <field name="notes" attrs="{'readonly':[('state','not in',('draft','open'))]}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

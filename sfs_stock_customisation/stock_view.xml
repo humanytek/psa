@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+    
+        <record id="view_stock_warehouse_form_inherit_location_restriction" model="ir.ui.view">
+            <field name="name">stock.warehouse.form.inherit</field>
+            <field name="model">stock.warehouse</field>
+            <field name="inherit_id" ref="stock.view_warehouse"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="inside">
+                   <notebook>
+                    <page string="Allowed Users">
+                        <field name="user_ids" nolabel="1" colspan="4"/>
+                    </page>
+                    </notebook>
+                </xpath>
+            </field>
+        </record>
+    
+    	<record id="stock_move_tree_view_inherit" model="ir.ui.view">
+    		<field name="name">stock.move.inh.tree</field>
+            <field name="model">stock.move</field>
+            <field name="inherit_id" ref="stock.view_move_tree"/>
+            <field name="arch" type="xml">
+    			 <xpath expr="//field[@name='product_id']" position="after">
+    			 	<field name="product_categ_id"/>
+    			 </xpath>
+    		</field>
+    	</record>
+    	
+    	<record id="stock_move_form_view_inherit" model="ir.ui.view">
+    		<field name="name">stock.move.inh.form</field>
+            <field name="model">stock.move</field>
+            <field name="inherit_id" ref="stock.view_move_form"/>
+            <field name="arch" type="xml">
+    			 <xpath expr="//field[@name='product_id']" position="after">
+    			 	<field name="product_categ_id"/>
+    			 </xpath>
+    		</field>
+    	</record>
+    	
+    	<record id="stock_move_search_view_inherit" model="ir.ui.view">
+    		<field name="name">stock.move.inh.search</field>
+            <field name="model">stock.move</field>
+            <field name="inherit_id" ref="stock.view_move_search"/>
+            <field name="arch" type="xml">
+    			 <xpath expr="//filter[@string='Product']" position="after">
+    			 	<filter string="Product Category" name="by_product_category" icon="terp-accessories-archiver" domain="[]"  context="{'group_by':'product_categ_id'}"/>
+    			 </xpath>
+    		</field>
+    	</record>
+    	
+    	<act_window
+            context="{'product_id': active_id, 'source_product': True}"
+            id="stock.act_stock_product_location_open"
+            name="Stock by Location"
+            res_model="stock.location"
+            src_model="product.product"/>
+    	
+    </data>
+</openerp>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="view_mrp_p2c_form" model="ir.ui.view">
+            <field eval="1" name="priority"/>
+            <field name="name">mrp.p2c.form</field>
+            <field name="model">mrp.ptoc.report</field>
+            <field name="arch" type="xml">
+                <tree string="Pending to consume" create="false" colors="red:date_planned&lt;current_date;">
+                    <field name="name"/>
+                    <field name="qty"/>
+                    <field name="product_consume_id"/>
+                    <field name="product_produce_id"/>
+                    <field name="date_planned"/>
+                    <field name="delay"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="view_mrp_p2c_search" model="ir.ui.view">
+            <field name="name">mrp.p2c.search</field>
+            <field name="model">mrp.ptoc.report</field>
+            <field name="arch" type="xml">
+                <search string="Pending to consume">
+                    <field name="name"/>
+                    <field name="product_consume_id"/>
+                    <field name="product_produce_id"/>
+                    <field name="date_planned"/>
+                    <field name="delay"/>
+                    <group expand="1" string="Group By...">
+                        <filter string="Product to produce" icon="terp-personal" name="Product to produce" context="{'group_by':'product_produce_id'}"/>
+                        <filter string="Product to consume" icon="terp-partner"  name="Product to consume" context="{'group_by':'product_consume_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        
+        <record id="action_mrp_p2c" model="ir.actions.act_window">
+            <field name="name">Pending to consume</field>
+            <field name="res_model">mrp.ptoc.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+            <field name="search_view_id" ref="view_mrp_p2c_search"/>
+            <field name="view_id" ref="view_mrp_p2c_form"/>
+        </record>
+        
+        <menuitem action="action_mrp_p2c" id="menu_mrp_p2c" parent="mrp.menu_mrp_planning" sequence="10"/>
+    </data>
+</openerp>

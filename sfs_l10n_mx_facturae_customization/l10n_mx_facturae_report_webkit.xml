@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <report auto="False"
+                id="l10n_mx_facturae_report.account_invoice_facturae_webkit"
+                model="account.invoice"
+                name="sfs.account.invoice.facturae.webkit.inherit"
+                file="sfs_l10n_mx_facturae_customization/report/invoice_facturae_html.mako"
+                string="Factura Electronica Report"
+                report_type="webkit"
+                attachment_use="1"
+                attachment="(object.state in ('open','paid')) and (object.fname_invoice and (object.fname_invoice + ''))"/>
+    </data>
+</openerp>

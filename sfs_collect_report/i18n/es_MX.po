@@ -1,0 +1,97 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sfs_collect_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20130819-231103\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-21 13:47+0000\n"
+"PO-Revision-Date: 2014-08-21 13:47+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sfs_collect_report
+#: model:ir.model,name:sfs_collect_report.model_collect_report_wizard
+msgid "collect.report.wizard"
+msgstr "collect.report.wizard"
+
+#. module: sfs_collect_report
+#: field:account.invoice,promise_payment_day:0
+msgid "Promise payment day"
+msgstr "Dia promesa de pago"
+
+#. module: sfs_collect_report
+#: code:addons/sfs_collect_report/wizard/collect_report_wizard.py:53
+#, python-format
+msgid "No such invoices for corresponding date"
+msgstr "Ninguna de estas facturas por fecha correspondiente"
+
+#. module: sfs_collect_report
+#: code:addons/sfs_collect_report/wizard/collect_report_wizard.py:51
+#, python-format
+msgid "Initial date  must be lesser than the Final date"
+msgstr "Fecha inicial debe ser menor que la fecha final"
+
+#. module: sfs_collect_report
+#: field:account.invoice,notes:0
+msgid "Notes"
+msgstr "Observaciones"
+
+#. module: sfs_collect_report
+#: view:collect.report.wizard:0
+msgid "View Report"
+msgstr "Ver informe"
+
+#. module: sfs_collect_report
+#: field:collect.report.wizard,end_date:0
+msgid "Final date"
+msgstr "Fecha límite"
+
+#. module: sfs_collect_report
+#: field:collect.report.wizard,currency_id:0
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: sfs_collect_report
+#: model:ir.actions.act_window,name:sfs_collect_report.collect_report_wizard_action
+#: model:ir.ui.menu,name:sfs_collect_report.menu_view_collect_report
+msgid "Collection Plan"
+msgstr "Plan de cobranza"
+
+#. module: sfs_collect_report
+#: field:collect.report.wizard,start_date:0
+msgid "Initial date"
+msgstr "Fecha inicial"
+
+#. module: sfs_collect_report
+#: field:collect.report.wizard,user_id:0
+msgid "User"
+msgstr "Usuario"
+
+#. module: sfs_collect_report
+#: model:ir.model,name:sfs_collect_report.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: sfs_collect_report
+#: view:collect.report.wizard:0
+msgid "Close"
+msgstr "Close"
+
+#. module: sfs_collect_report
+#: view:collect.report.wizard:0
+msgid "Enter Dates"
+msgstr "Enter Dates"
+
+#. module: sfs_collect_report
+#: code:addons/sfs_collect_report/wizard/collect_report_wizard.py:51
+#: code:addons/sfs_collect_report/wizard/collect_report_wizard.py:53
+#, python-format
+msgid "Warning!"
+msgstr "Warning!"
+

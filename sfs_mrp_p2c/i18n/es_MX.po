@@ -1,0 +1,66 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sfs_mrp_p2c
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20130819-231103\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-23 10:36+0000\n"
+"PO-Revision-Date: 2014-05-23 10:36+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sfs_mrp_p2c
+#: model:ir.actions.act_window,name:sfs_mrp_p2c.action_mrp_p2c
+#: model:ir.ui.menu,name:sfs_mrp_p2c.menu_mrp_p2c
+#: view:mrp.ptoc.report:0
+msgid "Pending to consume"
+msgstr "Pendientes de consumo"
+
+#. module: sfs_mrp_p2c
+#: field:mrp.ptoc.report,delay:0
+msgid "Days delay"
+msgstr "Dias de Retraso"
+
+#. module: sfs_mrp_p2c
+#: field:mrp.ptoc.report,name:0
+msgid "Manufacture Order"
+msgstr "Orden de produccion"
+
+#. module: sfs_mrp_p2c
+#: model:ir.model,name:sfs_mrp_p2c.model_mrp_ptoc_report
+msgid "Manufacturing Product to Consume Report"
+msgstr "Manufacturing Product to Consume Report"
+
+#. module: sfs_mrp_p2c
+#: view:mrp.ptoc.report:0
+#: field:mrp.ptoc.report,product_produce_id:0
+msgid "Product to produce"
+msgstr "Producto a producir"
+
+#. module: sfs_mrp_p2c
+#: view:mrp.ptoc.report:0
+#: field:mrp.ptoc.report,product_consume_id:0
+msgid "Product to consume"
+msgstr "Pendientes de consumo"
+
+#. module: sfs_mrp_p2c
+#: view:mrp.ptoc.report:0
+msgid "Group By..."
+msgstr "Group By..."
+
+#. module: sfs_mrp_p2c
+#: field:mrp.ptoc.report,date_planned:0
+msgid "Date Planned"
+msgstr "Fecha planificada"
+
+#. module: sfs_mrp_p2c
+#: field:mrp.ptoc.report,qty:0
+msgid "Quantity"
+msgstr "Cantidad"
+
